@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>J's Gallery</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background-color:#d6d6d6;
+font-family:Georgia,"Times New Roman",serif;
+color:#000;
+}
+
+header{
+text-align:center;
+padding:30px 20px 10px;
+}
+
+header h1{
+font-size:64px;
+font-weight:900;
+font-family:Georgia,serif;
+letter-spacing:-1px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:80px;
+padding:14px 0 20px;
+}
+
+nav a{
+color:#0000cc;
+text-decoration:underline;
+font-size:16px;
+font-family:Arial,sans-serif;
+}
+
+nav a:hover{
+color:#0000ff;
+}
+
+.intro{
+padding:10px 20px 20px;
+max-width:900px;
+margin:0 auto;
+overflow:hidden;
+}
+
+.intro .float-img{
+float:right;
+margin:0 0 10px 20px;
+width:380px;
+height:370px;
+object-fit:cover;
+}
+
+.intro p{
+font-size:15.5px;
+line-height:1.6;
+margin-bottom:16px;
+font-family:Arial,sans-serif;
+}
+
+.gallery-grid{
+width:100%;
+margin-top:10px;
+}
+
+.row{
+display:flex;
+width:100%;
+}
+
+.row .cell{
+overflow:hidden;
+flex-shrink:0;
+}
+
+.row .cell img,
+.row .cell video{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.row1 .cell-video{
+width:60%;
+height:240px;
+}
+
+.row1 .cell-photo{
+width:40%;
+height:240px;
+}
+
+.row2 .cell{
+width:33.333%;
+height:230px;
+}
+
+.row3 .cell-wide{
+width:62%;
+height:230px;
+}
+
+.row3 .cell-narrow{
+width:38%;
+height:230px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>J's Gallery</h1>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Gallery</a>
+</nav>
+
+<div class="intro">
+
+<img
+class="float-img"
+src=https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?semt=ais_hybrid&w=740&q=80
+alt="Coding laptop setup"
+/>
+
+<p> Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent mollis adipiscing per id libero libero. Tempus pretium netus molestie scelerisque facilisis tristique volutpat ultricies. Nostra ligula ac pulvinar rutrum non rhoncus mauris facilisi. Quisque maximus commodo sollicitudin, montes congue imperdiet. Est malesuada vivamus vestibulum ante aenean class. Per integer aptent ullamcorper sagittis posuere dignissim morbi scelerisque. Fringilla primis sagittis lorem erat integer; vulputate nullam. Porta purus habitant id fermentum nec ex, proin mauris sem. </p> <p> Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti. Non torquent amet nibh elit ante fermentum praesent cras. Et suspendisse egestas eros erat aptent sollicitudin. Nulla tortor purus posuere auctor himenaeos malesuada. Turpis phasellus enim venenatis aliquam pellentesque senectus, id ultrices. Praesent tellus consequat phasellus cubilia mattis mauris natoque litora. Fringilla cursus montes inceptos nec venenatis platea. </p> </div>
+</div>
+
+<div class="gallery-grid">
+
+<!-- Row 1 -->
+<div class="row row1">
+
+<div class="cell cell-video">
+<video controls>
+<source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4"/>
+</video>
+</div>
+
+<div class="cell cell-photo">
+<img
+src=https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg
+alt="Programming workspace"
+/>
+</div>
+
+</div>
+
+<!-- Row 2 -->
+<div class="row row2">
+
+<div class="cell">
+<img
+src=https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?w=620&auto=format&fit=crop&q=60&ixlib=rb-4.1.0
+alt="Sunset"
+/>
+</div>
+
+<div class="cell">
+<img
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQudOReO48s8WALMXQ_App8j_Ehq2PwPfDtuQ&s"
+alt="Mountain landscape"
+/>
+</div>
+
+<div class="cell">
+<img
+src="https://www.reconnectwithnature.org/getContentAsset/b3d7982c-0938-4df6-987c-c225baaac277/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/red-fox-looking-back-shutterstock.jpg?language=en-US"
+alt="Fox in nature"
+/>
+</div>
+
+</div>
+
+<!-- Row 3 -->
+<div class="row row3">
+
+<div class="cell cell-wide">
+<img
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f-DmofEumabDmQNhYNmyGXhP-EE8BtLvSg&s"
+alt="Beautiful hills landscape"
+/>
+</div>
+
+<div class="cell cell-narrow">
+<img
+src="https://jivimberg.io/images/background.jpg"
+alt="Peaceful forest waterfall"
+/>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
